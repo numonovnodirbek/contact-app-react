@@ -155,9 +155,9 @@ export class HomePage extends Component {
         todo.lastName.toLowerCase().includes(search) ||
         todo.phoneNumber.toLowerCase().includes(search)
     );
-    // if (sort !== "all") {
-    //   allTodos = allTodos.filter((todo) => todo.sort === sort);
-    // }
+    if (sort !== "all") {
+      allTodos = allTodos.filter((todo) => todo.sort === sort);
+    }
     const doneTodos = allTodos.filter((todo) => todo.done);
     // const undoneTodos = allTodos.filter((todo) => !todo.done);
     return (
