@@ -19,19 +19,19 @@ export class HomePage extends Component {
         {
           firstName: "Nodirbek",
           lastName: "Nu'monov",
-          phoneNumber: 917742477,
+          phoneNumber: "917742477",
           id: "0",
         },
         {
           firstName: "Jahonbek",
           lastName: "Nu'monov",
-          phoneNumber: 911234566,
+          phoneNumber: "911234566",
           id: "3",
         },
         {
           firstName: "Madina",
           lastName: "Nu'monova",
-          phoneNumber: 911234566,
+          phoneNumber: "911234566",
           id: "2",
         },
       ],
@@ -153,7 +153,7 @@ export class HomePage extends Component {
       (todo) =>
         todo.firstName.toLowerCase().includes(search) ||
         todo.lastName.toLowerCase().includes(search) ||
-        todo.phoneNumber.toLowerCase().includes(search)
+        todo.phoneNumber.includes(search)
     );
     if (sort !== "all") {
       allTodos = allTodos.filter((todo) => todo.sort === sort);

@@ -49,7 +49,7 @@ export class TodoForm extends Component {
               onChange={handleTodo}
               value={todo.phoneNumber}
               required
-              type="number"
+              type="text"
             />
           </Form.Group>
           {/* <Form.Group className="mb-3" controlId="importance">
