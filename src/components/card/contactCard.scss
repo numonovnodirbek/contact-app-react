@@ -1,0 +1,46 @@
+.contactCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 50px;
+  border: 2px solid;
+  margin-bottom: 10px;
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .user-icon {
+      font-size: 60px;
+      color: #7b7b7b;
+    }
+    .contactName {
+      h3 {
+        line-height: none !important;
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      h5 {
+        line-height: none !important;
+        margin: 0;
+        font-size: 16px;
+        color: #7b7b7b;
+      }
+    }
+  }
+  .cardBtns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .call-icon{
+      width: 50px;
+      transition: .2s ease-out;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
